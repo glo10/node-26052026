@@ -1,0 +1,21 @@
+{
+  "name": "2.1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Glodie Tshimini",
+  "license": "ISC",
+  "description": "Exercise 2.1 use NPM",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "cypress": "^15.15.0",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0",
+    "vitest": "^4.1.7"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.14"
+  }
+}
