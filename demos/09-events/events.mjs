@@ -17,5 +17,3 @@ const idTimeout = setTimeout(() => {
     // Arreter la répétion précédente de setInterval
     clearInterval(idInterval)
 }, 5000)
-console.log("id Interval", idInterval)
-clearTimeout(idTimeout)
