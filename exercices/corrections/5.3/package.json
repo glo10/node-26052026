@@ -1,0 +1,22 @@
+{
+  "name": "5.3",
+  "version": "1.0.0",
+  "description": "Champions league API",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "vitest",
+    "start": "npm i && npm update && node index.mjs",
+    "dev": "npm i && npm update && node --watch index.mjs"
+  },
+  "keywords": [],
+  "author": "Glodie Tshimini",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "cypress": "^15.16.0",
+    "supertest": "^7.2.2",
+    "vitest": "^4.1.7"
+  }
+}
