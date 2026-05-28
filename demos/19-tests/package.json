@@ -1,0 +1,18 @@
+{
+  "name": "19-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "Glodie Tshimini",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "cypress": "^15.16.0",
+    "supertest": "^7.2.2",
+    "vitest": "^4.1.7"
+  }
+}
