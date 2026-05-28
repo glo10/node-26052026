@@ -1,0 +1,17 @@
+{
+  "name": "7.1",
+  "version": "1.0.0",
+  "description": "Mocha with TDD approach",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [
+    "Vitest",
+    "TDD"
+  ],
+  "author": "Glodie Tshimini",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^4.1.7"
+  }
+}
