@@ -1,0 +1,19 @@
+{
+  "name": "20-mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mongo": "node --watch --env-file=.env mongodb.mjs",
+    "mongoose": "node --watch --env-file=.env mongoose.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "mongodb": "^7.2.0",
+    "mongoose": "^9.6.3"
+  }
+}
