@@ -5,15 +5,15 @@
   "scripts": {
     "e2e": "cypress open",
     "start": "npm i & npm update & node ./bin/www",
-    "dev": "SET DEBUG=5.1-5.2_pug:* & node --watch ./bin/www"
+    "dev": "SET DEBUG=5.1-5.2_pug:* & node --env-file=.env --watch ./bin/www"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
+    "cookie-parser": "~1.4.7",
+    "debug": "~4.4.3",
+    "express": "~5.2.1",
+    "http-errors": "~2.0.1",
+    "morgan": "~1.10.1",
+    "pug": "3.0.4"
   },
   "type": "commonjs",
   "description": "Projet a été initialisé au départ avec la commande `express --view=pug 5.1-5.2`.",

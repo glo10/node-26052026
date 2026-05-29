@@ -2,4 +2,13 @@ extends ../layout
 block main
   main
     each user in users
-      include ./components/card
+      article(class="card")
+        h2= user.title
+        img(src=user.avatar_url class="card-img-top" alt="article cover image")
+        div(class="card-body")
+            block card_body
+                h3
+                  small Nom : #{user.login}
+            block card_footer
+                footer
+                    a(href=user.link_details) Voir en détails

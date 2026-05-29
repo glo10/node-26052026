@@ -3,6 +3,18 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+img {
+  width: 150px;
+  aspect-ratio: 1 / 1;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
 a {
   color: #00B7FF;
 }

@@ -1,5 +1,5 @@
 const { findAll, findOne } = require('../models/users-github-model.cjs')
-const getUsers = (req, res) => {
+const getUsers = async (req, res) => {
     // appel du model pour recup data
     const users = await findAll()
     // passage des data à la vue

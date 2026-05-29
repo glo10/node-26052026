@@ -1,10 +1,26 @@
 extends ../layout
 block main
   main(class="box-single")
-    include ./components/card
-    append card_body 
-        p Blog : #{user.blog}
-        p Gists : #{user.gists}
-        p Followers : #{user.followers}
-        div=user.bio
-        p Date de création #{user.created_at}
+    article(class="card")
+      h2= user.title
+      img(src=user.avatar_url class="card-img-top" alt="article cover image")
+      div(class="card-body")
+        block card_body
+            h3
+              small Nom : #{user.login}
+            p Ville #{user.location}
+            div=user.bio
+            p
+              small iD : #{user.id}
+            p
+              small Entreprise : #{user.company}
+            p
+              small Type : #{user.type}
+            p
+              small Type : #{user.email || 'NC'}
+            p Blog : 
+              a(href=user.blog) #{user.blog}
+            p Gists : #{user.gists}
+            p Followers : #{user.followers}
+            p Date de création #{user.created_at}
+        
