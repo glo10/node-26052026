@@ -1,10 +1,10 @@
-import TeamRepository from "../models/repositories/team-repository.mjs";
+import GenericRepository from "../repositories/generic-repository.mjs";
 import TeamModel from "../models/schemas/team-model.mjs";
 import { connect } from "../models/connect.mjs";
 await connect();
-const repo = new TeamRepository(TeamModel);
+const repo = new GenericRepository(TeamModel);
 
-export const findAll = async (_, res) => {
+export const findAll = async (_, res) => {// _ lorsqu'un paramètre n'est pas exploité, ici req
   repo
     .findAll()
     .then((teams) => {
@@ -43,7 +43,7 @@ export const findOne = (req, res) => {
 };
 
 export const save = async (req, res) => {
-  let team = req.team;
+  let { team } = req;
   const data = await repo.save(team);
   if (data._id)
     res.status(201).json({ message: "Team created", success: true, team });

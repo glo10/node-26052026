@@ -1,8 +1,10 @@
 import { mongoose } from "mongoose";
 import { loadEnvFile } from "node:process";
 export async function connect() {
+  loadEnvFile()
   const state = mongoose.connection.readyState;
   if (state != 1) { // not connected
+    // Comme on l'a vu dans les démos, passer l'URL directement au lieu de tout découper
     const { MONGO_ROOT_USERNAME, MONGO_ROOT_PASSWORD, MONGO_DB_PORT, MONGO_DB_NAME } = process.env
     const cluster = `localhost:${MONGO_DB_PORT}/${MONGO_DB_NAME}?authSource=admin`
     const dbServer = `mongodb://${MONGO_ROOT_USERNAME}:${MONGO_ROOT_PASSWORD}@${cluster}`
