@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "e2e": "cypress open", 
     "test": "vitest"
   },
   "keywords": [],
